@@ -1,0 +1,4 @@
+test:
+  post:
+    - pip install --user codecov
+    - codecov --token=<private repository token>

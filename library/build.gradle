@@ -1,4 +1,11 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.nicholasworkshop.publish'
+apply plugin: 'com.nicholasworkshop.artifactid'
+apply plugin: 'com.nicholasworkshop.android.jacoco'
+
+id 'android-proxyview'
+group 'com.nicholasworkshop'
+version '1.0.0'
 
 android {
     compileSdkVersion 23
@@ -24,4 +31,19 @@ dependencies {
     testCompile 'org.mockito:mockito-core:1.9.5'
     testCompile 'org.robolectric:robolectric:3.0'
     testCompile 'org.khronos:opengl-api:gl1.1-android-2.1_r1'
+}
+
+publish {
+    projectName 'Proxy View'
+    projectUrl 'https://github.com/nickwph/proxyview-android'
+    developerId 'nickwph'
+    developerName 'Nicholas Wong'
+    licenses 'apache-2.0'
+    signing true
+    mavenTargets {
+        sonatype
+        bintray {
+            packageName 'ja'
+        }
+    }
 }
