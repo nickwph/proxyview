@@ -1,4 +1,4 @@
-package com.nicholasworkshop.proxyview.demo;
+package com.nicholasworkshop.proxyview.demo.fragment;
 
 import android.app.Fragment;
 import android.graphics.Color;

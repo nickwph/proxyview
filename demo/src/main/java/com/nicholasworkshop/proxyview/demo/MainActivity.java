@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
+import com.nicholasworkshop.proxyview.demo.fragment.RecyclerViewFragment;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import timber.log.Timber;

@@ -1,4 +1,4 @@
-package com.nicholasworkshop.proxyview.demo;
+package com.nicholasworkshop.proxyview.demo.fragment;
 
 import android.app.Fragment;
 import android.net.Uri;
@@ -13,6 +13,7 @@ import android.widget.VideoView;
 
 import com.nicholasworkshop.proxyview.OverlayFrameLayout;
 import com.nicholasworkshop.proxyview.ProxyView;
+import com.nicholasworkshop.proxyview.demo.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
