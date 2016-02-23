@@ -31,16 +31,20 @@ public class ImageViewFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         ButterKnife.bind(this, view);
 
+        // get the overlay view
         OverlayFrameLayout overlayView = OverlayFrameLayout.getInstance(getActivity());
+
+        // create the actual view
         ImageView imageView = new ImageView(view.getContext());
 
-        final ProxyView<ImageView> proxyView = new ProxyView<>(getActivity(), overlayView);
+        // put the actual view into the proxy view
+        ProxyView<ImageView> proxyView = new ProxyView<>(getActivity(), overlayView);
         proxyView.setActualView(imageView);
-
-        imageView.setOnClickListener(new View.OnClickListener() {
+        proxyView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                proxyView.setFullscreen(!proxyView.isFullscreen());
+                ProxyView view = (ProxyView) v;
+                view.setFullscreen(!view.isFullscreen());
             }
         });
 
