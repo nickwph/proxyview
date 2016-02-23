@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
                 .beginTransaction()
 //                .replace(R.id.content, new ImageViewFragment())
 //                .replace(R.id.content, new VideoViewFragment())
-                .replace(R.id.content, new ListViewFragment())
+//                .replace(R.id.content, new ListViewFragment())
+                .replace(R.id.content, new RecyclerViewFragment())
                 .commit();
     }
 }
