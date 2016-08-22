@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
+
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -16,6 +17,39 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay"/>
     </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#444444"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/single_image_view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Single Image View"/>
+
+        <Button
+            android:id="@+id/single_video_view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Single Video View"/>
+
+        <Button
+            android:id="@+id/recycler_view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Recycler View"/>
+
+        <Button
+            android:id="@+id/list_view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="List View"/>
+
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/content"

@@ -21,6 +21,8 @@ import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
+import timber.log.Timber;
+
 import static android.view.KeyEvent.ACTION_UP;
 import static android.view.KeyEvent.KEYCODE_BACK;
 import static java.lang.Math.abs;
@@ -51,6 +53,7 @@ public class ProxyView<ViewType extends View> extends View {
 
     public ProxyView(Context context, OverlayFrameLayout overlay) {
         this(context, overlay, new ActualViewWrapper<ViewType>(context));
+        Timber.e("Context: " + context);
     }
 
     @VisibleForTesting

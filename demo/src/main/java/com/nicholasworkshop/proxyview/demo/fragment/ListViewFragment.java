@@ -22,7 +22,8 @@ import static com.nicholasworkshop.proxyview.MetricUtils.getPxFromDp;
 public class ListViewFragment extends ListFragment {
 
     private static final String TITLE = "List View Demo";
-    private static final String IMAGE_1 = "http://goo.gl/BhK1vP";
+    private static final String IMAGE_1 = "http://www.sample-videos.com/audio/mp3/wave.mp3";
+    private static final String VIDEO_1 = "http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_5mb.mp4";
 
     private static final int TYPE_IMAGE = 0;
     private static final int TYPE_VIDEO = 1;

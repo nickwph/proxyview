@@ -117,4 +117,9 @@ public class ActualViewWrapper<ViewType extends View> extends FrameLayout {
             return (mClipBounds != null) ? new Rect(mClipBounds) : null;
         }
     }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+    }
 }

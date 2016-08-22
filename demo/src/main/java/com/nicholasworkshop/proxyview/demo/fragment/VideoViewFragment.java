@@ -49,7 +49,7 @@ public class VideoViewFragment extends Fragment {
         });
 
         container.addView(proxyView);
-        videoView.setVideoURI(Uri.parse("http://r8---sn-p5qlsu7z.googlevideo.com/videoplayback?sparams=dur,expire,id,initcwndbps,ip,ipbits,itag,lmt,mime,mm,mn,ms,mv,nh,pl,ratebypass,source,upn&key=cms1&mime=video%2Fmp4&fexp=9406994%2C9407117%2C9416126%2C9417703%2C9420452%2C9422596%2C9423661%2C9423662%2C9424005%2C9427317%2C9427892%2C9427977%2C9428247%2C9428309%2C9428424%2C9428464%2C9428732&expire=1455398156&dur=596.497&lmt=1429515542551690&signature=21AB688922F91AC2D31D09EA08804C06415F5647.52636A1372460CB242BC5ABB37EAC0D1F0D3ECAE&ip=72.69.70.14&id=5d218157378151b9&ipbits=0&upn=fUbncO4w6h8&pl=24&itag=22&source=youtube&ratebypass=yes&sver=3&title=Big+Buck+Bunny+animation+(1080p+HD)&req_id=14d6b1a4b123a3ee&redirect_counter=2&cms_redirect=yes&mm=26&mn=sn-p5qlsu7z&ms=tsu&mt=1455387020&mv=u"));
+        videoView.setVideoURI(Uri.parse("http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_5mb.mp4"));
         videoView.setMediaController(new MediaController(view.getContext()));
         videoView.start();
     }
